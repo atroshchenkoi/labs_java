@@ -1,3 +1,5 @@
+import by.gsu.pm.DailyExRate;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;

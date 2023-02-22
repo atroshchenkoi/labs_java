@@ -1,10 +1,12 @@
+package by.gsu.pm;
+
 import lombok.Data;
 
 import javax.xml.bind.annotation.*;
 
 
 @Data
-@XmlRootElement(name = "Currency")
+@XmlRootElement(name = "by.gsu.pm.Currency")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Currency {
     @XmlAttribute(name = "Id")

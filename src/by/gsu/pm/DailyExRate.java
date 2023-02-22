@@ -1,4 +1,6 @@
+package by.gsu.pm;
 
+import by.gsu.pm.Currency;
 import lombok.Data;
 
 import javax.xml.bind.annotation.*;
@@ -11,7 +13,7 @@ public class DailyExRate {
     @XmlAttribute(name = "Date")
     private String date;
     @XmlElementWrapper(name = "Currencies")
-    @XmlElement(name="Currency")
+    @XmlElement(name="by.gsu.pm.Currency")
     private ArrayList<Currency> currencies;
 
     @Override
