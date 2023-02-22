@@ -13,14 +13,14 @@ public class DailyExRate {
     @XmlAttribute(name = "Date")
     private String date;
     @XmlElementWrapper(name = "Currencies")
-    @XmlElement(name="by.gsu.pm.Currency")
+    @XmlElement(name="Currency")
     private ArrayList<Currency> currencies;
 
     @Override
     public String toString() {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         for (Currency currency : currencies) {
-            str += currency.toString();
+            str.append(currency.toString());
         }
         return "Курсы на " + date + ":" + str;
     }
