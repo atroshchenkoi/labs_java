@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 th:text="'Weather in ' + ${countryName}"></h1>
+<h4 th:text="'Country code ' + ${countryCode}"></h4>
+<h6 th:text = "${mainWeather} + ${descriptionWeather}"></h6>
+<h6 th:text="'Currently temperature: ' + ${currentlyTemperature}"></h6>
+<h6 th:text="'Max temperature: ' + ${maxTemperature}"></h6>
+<h6 th:text="'Min temperature: ' + ${minTemperature}"></h6>
+<h6 th:text="'Pressure(mm): ' + ${pressure}"></h6>
+<h6 th:text="'Humidity: ' + ${humidity}"></h6>
+<h6 th:text="'Wind speed(m/s): ' + ${windSpeed}"></h6>
+</body>
+</html>
+
+
